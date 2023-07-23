@@ -16,7 +16,5 @@ interface Props {
 const { entry } = Astro.props;
 ---
 <Layout title={entry.data.title}>
-  <div class="container">
-    <h1>{entry.data.title}</h1>
-  </div>
+  <h1>{entry.data.title}</h1>
 </Layout>
