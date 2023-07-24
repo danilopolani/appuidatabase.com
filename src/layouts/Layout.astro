@@ -1,8 +1,8 @@
 --- 
-import Navbar from '../components/Navbar1.astro';
+import Navbar from '../components/Navbar.astro';
 
 interface Props {
-	title: string;
+	title?: string;
 }
 
 const { title } = Astro.props;
@@ -21,12 +21,13 @@ const { title } = Astro.props;
 
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-		<script src="//unpkg.com/alpinejs" defer></script>
+		<link rel="preconnect" href="https://fonts.bunny.net">
+		<link href="https://fonts.bunny.net/css?family=lexend-mega:700|public-sans:400,600,700" rel="stylesheet" />
 	</head>
-	<body>
+	<body class="text-pastel-black font-body">
 		<Navbar />
 
-		<div class="container mx-auto">
+		<div class="container mx-auto py-10">
 			<slot />
 		</div>
 

@@ -15,8 +15,11 @@ const referenceId = label.toLocaleLowerCase().replace(/[^a-z0-9]/gi, '-');
 const targetElementId = `nav-dropdown-${referenceId}`;
 const triggerElementId = `nav-dropdown-trigger-${referenceId}`;
 ---
-<li>
-  <button id={triggerElementId} data-dropdown-toggle={targetElementId} class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-slate-800 md:p-0 md:w-auto hover:underline hover:decoration-wavy decoration-pastel-yellow">
+<li class="group py-4">
+  <button
+    id={triggerElementId}
+    data-dropdown-toggle={targetElementId}
+    class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-slate-800 font-semibold md:p-0 md:w-auto hover:underline hover:decoration-wavy group-hover:underline group-hover:decoration-wavy decoration-pastel-yellow underline-offset-4 decoration-2">
     {label}
 
     <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -25,7 +28,7 @@ const triggerElementId = `nav-dropdown-trigger-${referenceId}`;
   </button>
 
   <!-- Dropdown menu -->
-  <div id={targetElementId} class="z-10 hidden font-normal bg-pastel-purple divide-y divide-pastel-black border-2 border-pastel-black w-44">
+  <div id={targetElementId} class="z-10 hidden font-normal bg-pastel-purple divide-y divide-pastel-black border-2 border-pastel-black w-44 md:!mt-[10px]">
     <ul class="py-2 text-sm text-purple-black" aria-labelledby={triggerElementId}>
       {items.map((item) => (
         <li>

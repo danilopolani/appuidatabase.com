@@ -5,12 +5,16 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				'pastel-green': 'rgb(183, 212, 218)',
-				'pastel-yellow': 'rgb(254, 227, 198)',
-				'pastel-red': 'rgb(243, 196, 205)',
-				'pastel-purple': 'rgb(200, 190, 253)',
+				'pastel-green': '#bafda2',
+				'pastel-yellow': '#fcfd96',
+				'pastel-red': '#ff7a5c',
+				'pastel-purple': '#c5a1ff',
 				'pastel-black': 'rgb(20, 21, 32)',
 			},
+			fontFamily: {
+				heading: 'Lexend Mega, sans-serif',
+				body: 'Public Sans, sans-serif',
+			}
 		},
 	},
 	plugins: [
