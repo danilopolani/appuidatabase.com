@@ -6,4 +6,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: 'https://www.appuidatabase.com',
   integrations: [tailwind()],
+  experimental: {
+   assets: true,
+  },
 });

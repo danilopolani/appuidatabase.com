@@ -2,21 +2,27 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Button from '../components/Button.astro';
+import { AppCategory } from '../types';
+import { getCategoryTeaser } from '../helpers';
+
+const messagingApps = await getCategoryTeaser(AppCategory.Messaging);
 ---
 
 <Layout>
 	<div class="flex items-end justify-between mb-4">
-		<h2 class="font-semibold text-2xl mb-2 font-heading tracking-tighter">Social</h2>
+		<h2 class="font-semibold text-2xl mb-2 font-heading tracking-tighter">Messaging</h2>
 		<Button href="#">View all</Button>
 	</div>
 
 	<div class="grid grid-cols-4 gap-5">
-		<Card
-			title="Facebook"
-			subtitle="3 screens"
-			tag="Social"
-			href="#"
-			image="https://upload.wikimedia.org/wikipedia/commons/6/69/Screen_of_Facebook_%282%29.PNG" />
+		{messagingApps.map((item) => (
+			<Card
+				title={item.title}
+				subtitle={item.screensCount + ' screens'}
+				tag={item.category}
+				href="#"
+				image={item.image.src} />
+		))}
 		<Card
 			title="Facebook"
 			subtitle="3 screens"

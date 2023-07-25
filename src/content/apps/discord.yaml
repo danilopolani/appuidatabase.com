@@ -1,0 +1,6 @@
+---
+title: Discord
+url: https://www.discord.com
+image: '~/assets/discord/thumbnail.jpg'
+category: Messaging
+technologies: ['Electron']
