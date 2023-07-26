@@ -30,6 +30,7 @@ export async function getCategoryTeaser(category: AppCategory) {
 export function fetchAppsScreensCount(apps: CollectionEntry<'apps'>[], screens: CollectionEntry<'screens'>[]) {
   return apps.map((app) => ({
     ...app.data,
+    id: app.id,
     screensCount: screens.filter((screen) =>
       screen.id.endsWith(`${path.sep}${app.id}`)
     )[0]!.data.length,

@@ -16,5 +16,28 @@ interface Props {
 const { entry } = Astro.props;
 ---
 <Layout title={entry.data.title}>
-  <h1>{entry.data.title}</h1>
+  <div class="flex">
+    <div class="border-pastel-black border-[3px] p-1 relative">
+      <span class="bg-pastel-green py-1 px-3 text-xs absolute top-0 right-0 border-2 border-pastel-black border-t-0 border-r-0">
+        {entry.data.category}
+      </span>
+
+      <img
+        src={entry.data.image.src}
+        alt={entry.data.title}
+        class="w-[100px] h-[100px] object-cover" />
+    </div>
+
+    <div class="ml-4">
+      <h1 class="font-heading text-3xl tracking-tighter">{entry.data.title}</h1>
+      <div class="pl-1">
+        <p class="text-slate-400">{entry.data.technologies.join(', ')}</p>
+
+        <a href={entry.data.url} class="block mt-4 text-pastel-purple hover:underline hover:decoration-wavy decoration-pastel-purple underline-offset-4">
+          {entry.data.url}
+        </a>
+      </div>
+    </div>
+  </div>
+
 </Layout>
