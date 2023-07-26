@@ -1,9 +1,15 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
+import * as R from 'remeda';
+// @ts-ignore
+import path from 'node:path';
 import Layout from '../../layouts/Layout.astro';
+import { getScreenCategoryName } from '../../helpers';
+import type { Screen } from '../../types';
+import ScreenCard from '@components/ScreenCard.astro';
 
 export async function getStaticPaths() {
-  return (await getCollection('apps')).map(entry => ({
+  return (await getCollection('apps')).map((entry) => ({
     params: { slug: entry.id },
     props: { entry },
   }));
@@ -14,9 +20,15 @@ interface Props {
 }
 
 const { entry } = Astro.props;
+
+const screens = await getCollection('screens', ({ id }) => id.endsWith(`${path.sep}${entry.id}`));
+const screenCategories = R.uniq(
+  screens.map(({ id }) => id.split(path.sep)[0])
+);
+screenCategories.sort();
 ---
 <Layout title={entry.data.title}>
-  <div class="flex">
+  <header class="flex mb-20">
     <div class="border-pastel-black border-[3px] p-1 relative">
       <span class="bg-pastel-green py-1 px-3 text-xs absolute top-0 right-0 border-2 border-pastel-black border-t-0 border-r-0">
         {entry.data.category}
@@ -38,6 +50,19 @@ const { entry } = Astro.props;
         </a>
       </div>
     </div>
-  </div>
+  </header>
 
+  {screenCategories.map((category) => (
+    <h2 class="font-semibold text-2xl mb-2 font-heading tracking-tighter">{getScreenCategoryName(category)}</h2>
+
+    <div class="grid grid-cols-4 gap-5">
+      {screens.filter(({ id }) => id.startsWith(`${category}${path.sep}`)).map((section) => (
+        section.data.map((screen: Screen) => (
+          <ScreenCard
+            title={screen.title}
+            image={screen.image.src} />
+        ))
+      ))}
+    </div>
+  ))}
 </Layout>

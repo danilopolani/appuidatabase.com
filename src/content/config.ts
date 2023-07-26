@@ -1,4 +1,4 @@
-import { z, defineCollection } from 'astro:content';
+import { z, defineCollection, ImageFunction } from 'astro:content';
 import { AppCategory } from '../types';
 
 const apps = defineCollection({
@@ -16,10 +16,10 @@ const apps = defineCollection({
 const screens = defineCollection({
   type: 'data',
   // @ts-ignore
-  schema: z.array(
+  schema: ({ image }) => z.array(
     z.object({
       title: z.string(),
-      image: z.string(),
+      image: image(),
       platform: z.enum(['desktop', 'mobile']),
     })
   ),

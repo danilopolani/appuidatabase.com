@@ -7,8 +7,6 @@ import { AppCategory } from 'src/types';
 
 const apps = fetchAppsScreensCount(await getCollection('apps'), await getCollection('screens'));
 const categories = Object.values(AppCategory);
-
-console.log(categories);
 ---
 
 <Layout>

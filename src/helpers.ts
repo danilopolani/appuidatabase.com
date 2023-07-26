@@ -36,3 +36,7 @@ export function fetchAppsScreensCount(apps: CollectionEntry<'apps'>[], screens: 
     )[0]!.data.length,
   }));
 }
+
+export function getScreenCategoryName(value: string) {
+  return value.replace(/[^a-z0-9]/gi, ' ').replace(/(^\w{1})|(\s+\w{1})/g, (letter) => letter.toUpperCase());
+}
