@@ -1,4 +1,4 @@
-import { getCollection } from 'astro:content';
+import { CollectionEntry, getCollection } from 'astro:content';
 import * as R from 'remeda';
 // @ts-ignore
 import path from 'node:path';
@@ -24,5 +24,14 @@ export async function getCategoryTeaser(category: AppCategory) {
   return data.map((app) => ({
     ...app.data,
     screensCount: screens.filter((screen) => screen.id.endsWith(`${path.sep}${app.id}`))[0]!.data.length,
+  }));
+}
+
+export function fetchAppsScreensCount(apps: CollectionEntry<'apps'>[], screens: CollectionEntry<'screens'>[]) {
+  return apps.map((app) => ({
+    ...app.data,
+    screensCount: screens.filter((screen) =>
+      screen.id.endsWith(`${path.sep}${app.id}`)
+    )[0]!.data.length,
   }));
 }
