@@ -11,10 +11,14 @@ const messagingApps = await getCategoryTeaser(AppCategory.Messaging);
 <Layout>
 	<div class="flex items-end justify-between mb-4">
 		<h2 class="font-semibold text-2xl mb-2 font-heading tracking-tighter">Messaging</h2>
-		<Button href="#">View all</Button>
+		<Button href="#">
+			View all
+				<span class="text-pastel-purple">3</span>
+				apps
+		</Button>
 	</div>
 
-	<div class="grid grid-cols-4 gap-5">
+	<div class="grid grid-cols-5 gap-5">
 		{messagingApps.map((item) => (
 			<Card
 				title={item.title}
@@ -38,5 +42,123 @@ const messagingApps = await getCategoryTeaser(AppCategory.Messaging);
 			subtitle="3 screens"
 			href="#"
 			image="https://upload.wikimedia.org/wikipedia/commons/6/69/Screen_of_Facebook_%282%29.PNG" />
+		<Card
+			title="Facebook"
+			subtitle="3 screens"
+			href="#"
+			image="https://upload.wikimedia.org/wikipedia/commons/6/69/Screen_of_Facebook_%282%29.PNG" />
+	</div>
+
+	<div class="flex items-end justify-between mt-10 mb-4">
+		<h2 class="font-semibold text-2xl mb-2 font-heading tracking-tighter">Messaging</h2>
+		<Button href="#">
+			View all
+				<span class="text-pastel-purple">3</span>
+				apps
+		</Button>
+	</div>
+
+	<div class="grid grid-cols-5 gap-5">
+		{messagingApps.map((item) => (
+			<Card
+				title={item.title}
+				subtitle={item.screensCount + ' screens'}
+				tag={item.category}
+				href="#"
+				image={item.image.src} />
+		))}
+		<Card
+			title="Facebook"
+			subtitle="3 screens"
+			href="#"
+			image="https://upload.wikimedia.org/wikipedia/commons/6/69/Screen_of_Facebook_%282%29.PNG" />
+		<Card
+			title="Facebook"
+			subtitle="3 screens"
+			href="#"
+			image="https://upload.wikimedia.org/wikipedia/commons/6/69/Screen_of_Facebook_%282%29.PNG" />
+		<Card
+			title="Facebook"
+			subtitle="3 screens"
+			href="#"
+			image="https://upload.wikimedia.org/wikipedia/commons/6/69/Screen_of_Facebook_%282%29.PNG" />
+		<Card
+			title="Facebook"
+			subtitle="3 screens"
+			href="#"
+			image="https://upload.wikimedia.org/wikipedia/commons/6/69/Screen_of_Facebook_%282%29.PNG" />
+	</div>
+
+	<h2 class="font-semibold text-2xl mt-10 mb-5 font-heading tracking-tighter">Messaging</h2>
+
+	<div class="grid grid-cols-5 gap-5">
+		{messagingApps.map((item) => (
+			<Card
+				title={item.title}
+				subtitle={item.screensCount + ' screens'}
+				tag={item.category}
+				href="#"
+				image={item.image.src} />
+		))}
+		<Card
+			title="Facebook"
+			subtitle="3 screens"
+			href="#"
+			image="https://upload.wikimedia.org/wikipedia/commons/6/69/Screen_of_Facebook_%282%29.PNG" />
+		<Card
+			title="Facebook"
+			subtitle="3 screens"
+			href="#"
+			image="https://upload.wikimedia.org/wikipedia/commons/6/69/Screen_of_Facebook_%282%29.PNG" />
+		<Card
+			title="Facebook"
+			subtitle="3 screens"
+			href="#"
+			image="https://upload.wikimedia.org/wikipedia/commons/6/69/Screen_of_Facebook_%282%29.PNG" />
+
+		<a href="#" class="bg-pastel-yellow border-2 border-pastel-black relative after:w-[calc(100%+6px)] after:h-[calc(100%+6px)] after:absolute after:-bottom-4 after:-right-4 after:-z-10 after:bg-pastel-black mr-4 mb-4 py-2 flex justify-center items-center font-heading tracking-tighter text-center">
+			<span>
+				View all<br>
+				<span class="text-pastel-purple underline decoration-double decoration-pastel-purple underline-offset-2 decoration-2">3</span>
+				apps
+			</span>
+		</a>
+	</div>
+
+
+	<h2 class="font-semibold text-2xl mt-10 mb-5 font-heading tracking-tighter">Social</h2>
+
+	<div class="grid grid-cols-5 gap-5">
+		{messagingApps.map((item) => (
+			<Card
+				title={item.title}
+				subtitle={item.screensCount + ' screens'}
+				tag={item.category}
+				href="#"
+				image={item.image.src} />
+		))}
+		<Card
+			title="Facebook"
+			subtitle="3 screens"
+			href="#"
+			image="https://upload.wikimedia.org/wikipedia/commons/6/69/Screen_of_Facebook_%282%29.PNG" />
+		<Card
+			title="Facebook"
+			subtitle="3 screens"
+			href="#"
+			image="https://upload.wikimedia.org/wikipedia/commons/6/69/Screen_of_Facebook_%282%29.PNG" />
+		<Card
+			title="Facebook"
+			subtitle="3 screens"
+			href="#"
+			image="https://upload.wikimedia.org/wikipedia/commons/6/69/Screen_of_Facebook_%282%29.PNG" />
+
+		<a href="#" class="bg-pastel-green border-2 border-pastel-black relative after:w-[calc(100%+6px)] after:h-[calc(100%+6px)] after:absolute after:-bottom-4 after:-right-4 after:-z-10 after:bg-pastel-black mr-4 mb-4 py-2 flex justify-center items-center font-heading tracking-tighter text-center">
+			<span>
+				View other<br>
+				<span class="text-pastel-purple underline decoration-double decoration-pastel-purple underline-offset-2 decoration-2">3</span>
+				apps
+			</span>
+		</a>
 	</div>
 </Layout>

@@ -1,5 +1,7 @@
 import { getCollection } from 'astro:content';
 import * as R from 'remeda';
+// @ts-ignore
+import path from 'node:path';
 import type { AppCategory } from './types';
 
 export async function getCategoryTeaser(category: AppCategory) {
@@ -14,13 +16,13 @@ export async function getCategoryTeaser(category: AppCategory) {
   const screens = await getCollection('screens', (screen) => 
     data.map((app) => app.id).includes(
       // @ts-ignore
-      screen.id.split('\\').pop()
+      screen.id.split(path.sep).pop()
     )
   );
 
   // Finally match the apps with their screens count
   return data.map((app) => ({
     ...app.data,
-    screensCount: screens.filter((screen) => screen.id.endsWith(`\\${app.id}`))[0]!.data.length,
+    screensCount: screens.filter((screen) => screen.id.endsWith(`${path.sep}${app.id}`))[0]!.data.length,
   }));
 }
