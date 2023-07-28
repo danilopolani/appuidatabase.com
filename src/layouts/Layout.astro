@@ -1,5 +1,7 @@
---- 
+---
+import { fetchAppsScreensCount } from 'src/helpers';
 import Navbar from '../components/Navbar.astro';
+import { getCollection } from 'astro:content';
 
 interface Props {
 	title?: string;
@@ -7,8 +9,8 @@ interface Props {
 
 const { title } = Astro.props;
 
+const apps = fetchAppsScreensCount(await getCollection('apps'), await getCollection('screens'));
 ---
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>

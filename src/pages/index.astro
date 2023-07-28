@@ -10,17 +10,21 @@ const categories = Object.values(AppCategory);
 ---
 
 <Layout>
-	{categories.map((category) => (
-		<h2 class="font-semibold text-2xl mb-2 font-heading tracking-tighter">{category}</h2>
+	<div>
+		<input type="text" placeholder="Search an app" class="border-2 border-pastel-black w-1/3 focus:border-pastel-red focus:ring-0" />
 
-		<div class="grid grid-cols-4 gap-5">
-			{apps.filter((app) => app.category === category).map((item) => (
-				<Card
-					title={item.title}
-					subtitle={item.screensCount + ' screens'}
-					href={'/apps/' + item.id}
-					image={item.image.src} />
-			))}
-		</div>
-	))}
+		{categories.map((category) => (
+			<h2 class="font-semibold text-2xl mb-2 font-heading tracking-tighter">{category}</h2>
+
+			<div class="grid grid-cols-4 gap-5">
+				{apps.filter((app) => app.category === category).map((item) => (
+					<Card
+						title={item.title}
+						subtitle={item.screensCount + ' screens'}
+						href={'/apps/' + item.id}
+						image={item.image.src} />
+				))}
+			</div>
+		))}
+	</div>
 </Layout>

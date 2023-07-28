@@ -66,3 +66,18 @@ screenCategories.sort();
     </div>
   ))}
 </Layout>
+
+<script>
+// @ts-ignore no types available
+import { LuminousGallery } from 'luminous-lightbox';
+import 'node_modules/luminous-lightbox/dist/luminous-basic.css';
+
+new LuminousGallery(document.querySelectorAll('.gallery-item'));
+</script>
+
+<style is:global>
+  .lum-img {
+    display: initial;
+    vertical-align: initial;
+  }
+</style>
