@@ -1,7 +1,7 @@
 ---
 interface Props {
 	title: string;
-	image: string;
+	image: string | ImageMetadata;
 }
 
 const { title, image } = Astro.props;
@@ -9,7 +9,7 @@ const { title, image } = Astro.props;
 <div class="block group bg-white border-2 border-pastel-black relative after:w-[calc(100%+6px)] after:h-[calc(100%+6px)] after:absolute after:-bottom-4 after:-right-4 after:-z-10 after:bg-pastel-green mr-4 mb-4 cursor-pointer">
   <div class="h-[300px] overflow-hidden">
 	  <img
-      src={image}
+      src={typeof image === 'string' ? image : image.src}
       alt={title + ' thumbnail'}
       class="object-cover border-b-2 border-pastel-black w-full h-full hover:scale-105 ease-in duration-300" />
   </div>
