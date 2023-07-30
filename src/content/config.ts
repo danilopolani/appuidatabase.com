@@ -1,5 +1,5 @@
 import { z, defineCollection } from 'astro:content';
-import { AppCategory } from '../types';
+import { Platform, AppCategory } from 'src/enums';
 
 const apps = defineCollection({
   type: 'data',
@@ -20,7 +20,8 @@ const screens = defineCollection({
     z.object({
       title: z.string(),
       image: image(),
-      platform: z.enum(['desktop', 'mobile']),
+      // @ts-ignore
+      platform: z.enum(Object.values(Platform)),
     })
   ),
 });

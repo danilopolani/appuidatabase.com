@@ -1,7 +1,7 @@
 - title: For you tab (empty)
   image: "~/assets/discord/notifications/tab-for-you-empty.png"
-  platform: desktop
+  platform: Desktop
 
 - title: Unread tab (empty)
   image: "~/assets/discord/notifications/tab-unread-empty.png"
-  platform: desktop
+  platform: Desktop

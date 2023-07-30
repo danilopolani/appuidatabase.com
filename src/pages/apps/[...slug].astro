@@ -3,10 +3,10 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import * as R from 'remeda';
 // @ts-ignore
 import path from 'node:path';
-import Layout from '../../layouts/Layout.astro';
-import { getScreenCategoryName } from '../../helpers';
-import type { Screen } from '../../types';
-import ScreenCard from '@components/ScreenCard.astro';
+import Layout from 'src/layouts/Layout.astro';
+import { getScreenCategoryName } from 'src/helpers';
+import ScreenCard from 'src/components/ScreenCard.astro';
+import type { Screen } from 'src/types';
 
 export async function getStaticPaths() {
   return (await getCollection('apps')).map((entry) => ({
@@ -60,7 +60,8 @@ screenCategories.sort();
         section.data.map((screen: Screen) => (
           <ScreenCard
             title={screen.title}
-            image={screen.image.src} />
+            image={screen.image.src}
+            platform={screen.platform} />
         ))
       ))}
     </div>

@@ -2,7 +2,7 @@ import { CollectionEntry, getCollection } from 'astro:content';
 import * as R from 'remeda';
 // @ts-ignore
 import path from 'node:path';
-import type { AppCategory } from './types';
+import { Platform, AppCategory } from './enums';
 
 export async function getCategoryTeaser(category: AppCategory) {
   // Get 4 random apps for the category
@@ -39,4 +39,12 @@ export function fetchAppsScreensCount(apps: CollectionEntry<'apps'>[], screens: 
 
 export function getScreenCategoryName(value: string) {
   return value.replace(/[^a-z0-9]/gi, ' ').replace(/(^\w{1})|(\s+\w{1})/g, (letter) => letter.toUpperCase());
+}
+
+export function getPlatformCategory(value: Platform) {
+  if ([Platform.Desktop, Platform.Mobile].includes(value)) {
+    return value;
+  }
+
+  return [Platform.Mac, Platform.Windows, Platform.Linux].includes(value) ? Platform.Desktop : Platform.Mobile;
 }
