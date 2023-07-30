@@ -1,4 +1,4 @@
-import { z, defineCollection, ImageFunction } from 'astro:content';
+import { z, defineCollection } from 'astro:content';
 import { AppCategory } from '../types';
 
 const apps = defineCollection({
