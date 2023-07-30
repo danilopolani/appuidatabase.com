@@ -1,15 +1,11 @@
 ---
-import { fetchAppsScreensCount } from 'src/helpers';
 import Navbar from '../components/Navbar.astro';
-import { getCollection } from 'astro:content';
 
 interface Props {
 	title?: string;
 }
 
 const { title } = Astro.props;
-
-const apps = fetchAppsScreensCount(await getCollection('apps'), await getCollection('screens'));
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -25,8 +21,18 @@ const apps = fetchAppsScreensCount(await getCollection('apps'), await getCollect
 
 		<link rel="preconnect" href="https://fonts.bunny.net">
 		<link href="https://fonts.bunny.net/css?family=lexend-mega:700|public-sans:400,600,700" rel="stylesheet" />
+		<style is:global>
+			.lum-lightbox {
+				z-index: 11;
+			}
+
+			.lum-img {
+				display: initial;
+				vertical-align: initial;
+			}
+		</style>
 	</head>
-	<body class="text-pastel-black font-body">
+	<body class="text-pastel-black bg-slate-50 font-body">
 		<Navbar />
 
 		<div class="container mx-auto py-10">

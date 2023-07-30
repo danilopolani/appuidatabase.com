@@ -1,0 +1,19 @@
+- title: Server top-bar settings
+  image: "~/assets/discord/popover/server-top-bar-settings.png"
+  platform: Desktop
+
+- title: Server side-nav settings
+  image: "~/assets/discord/popover/server-side-nav-settings.png"
+  platform: Desktop
+
+- title: Channel settings
+  image: "~/assets/discord/popover/channel-settings.png"
+  platform: Desktop
+
+- title: Global profile
+  image: "~/assets/discord/popover/global-profile.png"
+  platform: Desktop
+
+- title: User profile
+  image: "~/assets/discord/popover/user-profile.png"
+  platform: Desktop

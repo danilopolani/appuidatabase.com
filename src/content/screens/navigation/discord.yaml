@@ -1,0 +1,15 @@
+- title: Servers
+  image: "~/assets/discord/navigation/servers.png"
+  platform: Desktop
+
+- title: Servers with expanded folder
+  image: "~/assets/discord/navigation/servers-expanded-folder.png"
+  platform: Desktop
+
+- title: Channels
+  image: "~/assets/discord/navigation/channels.png"
+  platform: Desktop
+
+- title: Cmd+k
+  image: "~/assets/discord/navigation/cmdk.png"
+  platform: Desktop

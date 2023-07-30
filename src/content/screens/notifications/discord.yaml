@@ -2,6 +2,14 @@
   image: "~/assets/discord/notifications/tab-for-you-empty.png"
   platform: Desktop
 
-- title: Unread tab (empty)
+- title: Unreads tab (empty)
   image: "~/assets/discord/notifications/tab-unread-empty.png"
+  platform: Desktop
+
+- title: Mentions tab
+  image: "~/assets/discord/notifications/tab-mentions.png"
+  platform: Desktop
+
+- title: Mentions tab filters
+  image: "~/assets/discord/notifications/tab-mentions-filters.png"
   platform: Desktop

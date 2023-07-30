@@ -55,7 +55,7 @@ screenCategories.sort();
   {screenCategories.map((category) => (
     <h2 class="font-semibold text-2xl mb-2 font-heading tracking-tighter">{getScreenCategoryName(category)}</h2>
 
-    <div class="grid grid-cols-4 gap-5">
+    <div class="grid grid-cols-4 gap-5 mb-10">
       {screens.filter(({ id }) => id.startsWith(`${category}${path.sep}`)).map((section) => (
         section.data.map((screen: Screen) => (
           <ScreenCard
@@ -75,10 +75,3 @@ import 'node_modules/luminous-lightbox/dist/luminous-basic.css';
 
 new LuminousGallery(document.querySelectorAll('.gallery-item'));
 </script>
-
-<style is:global>
-  .lum-img {
-    display: initial;
-    vertical-align: initial;
-  }
-</style>

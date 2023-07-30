@@ -1,0 +1,19 @@
+- title: Create server
+  image: "~/assets/discord/modals/create-server.png"
+  platform: Desktop
+
+- title: Join server
+  image: "~/assets/discord/modals/join-server.png"
+  platform: Desktop
+
+- title: Cmd+k
+  image: "~/assets/discord/navigation/cmdk.png"
+  platform: Desktop
+
+- title: User profile - Tab "Mutual servers"
+  image: "~/assets/discord/modals/user-profile-tab-mutual-servers.png"
+  platform: Desktop
+
+- title: User profile - Tab "Mutual friends" (empty)
+  image: "~/assets/discord/modals/user-profile-tab-mutual-friends-empty.png"
+  platform: Desktop
