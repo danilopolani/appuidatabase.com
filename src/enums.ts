@@ -3,6 +3,7 @@ export enum AppCategory {
 }
 
 export enum ScreenCategory {
+  Forms = 'forms',
   Modals = 'modals',
   Notifications = 'notifications',
   Navigation = 'navigation',

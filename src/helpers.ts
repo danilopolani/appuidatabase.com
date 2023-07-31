@@ -27,6 +27,12 @@ export function getPlatformCategory(value: Platform) {
 
 export function getScreenCategoryIcon(value: ScreenCategory, classes?: string) {
   return {
+    [ScreenCategory.Forms]: `
+      <svg class="${classes}" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path fill="currentColor" d="M27 22.14V9.86A4 4 0 1 0 22.14 5H9.86A4 4 0 1 0 5 9.86v12.28A4 4 0 1 0 9.86 27h12.28A4 4 0 1 0 27 22.14ZM26 4a2 2 0 1 1-2 2a2 2 0 0 1 2-2ZM4 6a2 2 0 1 1 2 2a2 2 0 0 1-2-2Zm2 22a2 2 0 1 1 2-2a2 2 0 0 1-2 2Zm16.14-3H9.86A4 4 0 0 0 7 22.14V9.86A4 4 0 0 0 9.86 7h12.28A4 4 0 0 0 25 9.86v12.28A4 4 0 0 0 22.14 25ZM26 28a2 2 0 1 1 2-2a2 2 0 0 1-2 2Z"/>
+        <path fill="currentColor" d="M21 11H11v2h4v9h2v-9h4v-2z"/>
+      </svg>
+    `,
     [ScreenCategory.Modals]: `
       <svg class="${classes}" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
         <path fill="currentColor" d="M4 20v2h4.586L2 28.586L3.414 30L10 23.414V28h2v-8H4zm16 2h4v2h-4zm-4-4h4v2h-4zm4-4h4v2h-4zM8 14h4v2H8z"/>

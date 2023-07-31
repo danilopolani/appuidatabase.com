@@ -21,3 +21,7 @@
 - title: Get nitro
   image: "~/assets/discord/modals/get-nitro.png"
   platform: Desktop
+
+- title: Friend request failed
+  image: "~/assets/discord/modals/friend-request-failed.png"
+  platform: Desktop

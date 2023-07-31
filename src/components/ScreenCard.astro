@@ -2,11 +2,17 @@
 import type { Platform } from 'src/enums';
 interface Props {
 	title: string;
-	image: string | ImageMetadata;
+	image: ImageMetadata;
 	platform: Platform;
 }
 
 const { title, image, platform } = Astro.props;
+
+const imageWithBg = (image: ImageMetadata) => {
+	const ratio = image.width > image.height ? (image.width / image.height) : (image.height / image.width);
+
+	return ratio > 2;
+}
 ---
 <a
 	href={typeof image === 'string' ? image : image.src}
@@ -15,11 +21,11 @@ const { title, image, platform } = Astro.props;
 		<div class="px-2 py-1 bg-pastel-green text-xs font-semibold rounded-xl">{platform}</div>
 	</div>
 
-  <div class="h-[300px] overflow-hidden relative">
+  <div class="h-[300px] overflow-hidden relative bg-pastel-black">
 	  <img
-      src={typeof image === 'string' ? image : image.src}
+      src={image.src}
       alt={title}
-      class="object-cover border-b-2 border-pastel-black w-full h-full scale-105 hover:blur-sm ease-in duration-150" />
+      class={(imageWithBg(image) ? 'object-contain' : 'object-cover') + ' w-full h-full border-b-2 border-pastel-black scale-105 hover:blur-sm ease-in duration-150'} />
   </div>
 
 	<div class="p-3 group-hover:underline underline-offset-2 decoration-2 decoration-pastel-purple">

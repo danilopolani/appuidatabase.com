@@ -41,3 +41,11 @@
 - title: Chat actions
   image: "~/assets/discord/popover/chat-actions.png"
   platform: Desktop
+
+- title: Search in chat
+  image: "~/assets/discord/popover/search-in-chat.png"
+  platform: Desktop
+
+- title: Pinned messages (empty)
+  image: "~/assets/discord/popover/pinned-messages-empty.png"
+  platform: Desktop

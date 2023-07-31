@@ -1,0 +1,23 @@
+- title: Input with button
+  image: "~/assets/discord/forms/input-with-button.png"
+  platform: Desktop
+
+- title: Animated search bar input
+  image: "~/assets/discord/forms/animated-searchbar.gif"
+  platform: Desktop
+
+- title: Tag input
+  image: "~/assets/discord/forms/tag-input.png"
+  platform: Desktop
+
+- title: Radio
+  image: "~/assets/discord/forms/radio.png"
+  platform: Desktop
+
+- title: List with checkbox
+  image: "~/assets/discord/forms/list-checkboxes.png"
+  platform: Desktop
+
+- title: Button disabled with tooltip
+  image: "~/assets/discord/forms/button-disabled-tooltip.png"
+  platform: Desktop
