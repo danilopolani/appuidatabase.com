@@ -29,3 +29,15 @@
 - title: User profile
   image: "~/assets/discord/popover/user-profile.png"
   platform: Desktop
+
+- title: Select friends
+  image: "~/assets/discord/popover/select-friends.png"
+  platform: Desktop
+
+- title: Select friends (empty)
+  image: "~/assets/discord/popover/select-friends-empty.png"
+  platform: Desktop
+
+- title: Chat actions
+  image: "~/assets/discord/popover/chat-actions.png"
+  platform: Desktop

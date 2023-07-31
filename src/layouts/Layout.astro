@@ -24,11 +24,13 @@ const { title } = Astro.props;
 		<style is:global>
 			.lum-lightbox {
 				z-index: 11;
+				@apply bg-pastel-black/90;
 			}
 
 			.lum-img {
 				display: initial;
 				vertical-align: initial;
+				@apply border-4;
 			}
 		</style>
 	</head>

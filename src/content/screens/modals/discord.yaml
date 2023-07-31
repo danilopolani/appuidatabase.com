@@ -17,3 +17,7 @@
 - title: User profile - Tab "Mutual friends" (empty)
   image: "~/assets/discord/modals/user-profile-tab-mutual-friends-empty.png"
   platform: Desktop
+
+- title: Get nitro
+  image: "~/assets/discord/modals/get-nitro.png"
+  platform: Desktop
