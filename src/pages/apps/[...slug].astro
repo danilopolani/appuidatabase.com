@@ -4,7 +4,7 @@ import * as R from 'remeda';
 // @ts-ignore
 import path from 'node:path';
 import Layout from 'src/layouts/Layout.astro';
-import { getScreenCategoryName } from 'src/helpers';
+import { getScreenCategoryName, getScreenCategoryIcon } from 'src/helpers';
 import ScreenCard from 'src/components/ScreenCard.astro';
 import type { Screen } from 'src/types';
 
@@ -29,11 +29,11 @@ screenCategories.sort();
 ---
 <Layout title={entry.data.title}>
   <header class="flex mb-20">
-    <div class="border-pastel-black border-[3px] p-1">
+    <div class="border-pastel-black border-[3px] p-1 aspect-square w-[130px] h-[130px]">
       <img
         src={entry.data.image.src}
         alt={entry.data.title}
-        class="w-[100px] h-[100px] object-cover" />
+        class="w-full h-full object-cover" />
     </div>
 
     <div class="ml-4">
@@ -50,9 +50,15 @@ screenCategories.sort();
   </header>
 
   {screenCategories.map((category) => (
-    <h2 class="font-semibold text-2xl mb-2 font-heading tracking-tighter">{getScreenCategoryName(category)}</h2>
+    <div class="flex mb-4">
+      <div class="w-8 h-8 flex items-center justify-center bg-pastel-purple border-2 border-pastel-black mr-2">
+        <Fragment set:html={getScreenCategoryIcon(category, 'w-5 h-5 text-pastel-black')} />
+      </div>
 
-    <div class="grid grid-cols-4 gap-5 mb-10">
+      <h2 class="font-semibold text-2xl font-heading tracking-tighter">{getScreenCategoryName(category)}</h2>
+    </div>
+
+    <div class="grid grid-cols-4 gap-5 mb-14">
       {screens.filter(({ id }) => id.startsWith(`${category}${path.sep}`)).map((section) => (
         section.data.map((screen: Screen) => (
           <ScreenCard
