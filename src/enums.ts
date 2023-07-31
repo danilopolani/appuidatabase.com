@@ -2,6 +2,13 @@ export enum AppCategory {
   Messaging = 'Messaging',
 }
 
+export enum ScreenCategory {
+  Modals = 'modals',
+  Notifications = 'notifications',
+  Navigation = 'navigation',
+  Popover = 'popover',
+}
+
 export enum Platform {
   Mac = 'Mac',
   Windows = 'Windows',

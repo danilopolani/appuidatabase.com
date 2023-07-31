@@ -1,3 +1,15 @@
+- title: GIF picker
+  image: "~/assets/discord/popover/gif-picker.png"
+  platform: Desktop
+
+- title: Sticker picker
+  image: "~/assets/discord/popover/sticker-picker.png"
+  platform: Desktop
+
+- title: Emoji picker
+  image: "~/assets/discord/popover/emoji-picker.png"
+  platform: Desktop
+
 - title: Server top-bar settings
   image: "~/assets/discord/popover/server-top-bar-settings.png"
   platform: Desktop

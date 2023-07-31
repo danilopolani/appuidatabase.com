@@ -1,0 +1,57 @@
+---
+import { getCollection } from 'astro:content';
+import * as R from 'remeda';
+// @ts-ignore
+import path from 'node:path';
+import Layout from 'src/layouts/Layout.astro';
+import { getScreenCategoryName, getScreenCategoryIcon } from 'src/helpers';
+import ScreenCard from 'src/components/ScreenCard.astro';
+import type { Screen } from 'src/types';
+import { ScreenCategory } from 'src/enums';
+
+export function getStaticPaths() {
+  return Object.values(ScreenCategory).map((component) => ({
+    params: { component },
+  }));
+}
+
+const { component } = Astro.params;
+
+const screens = await getCollection('screens', ({ id }) => id.startsWith(`${component}${path.sep}`));
+const apps = await getCollection('apps', ({ id }) => 
+  R.uniq(screens.map((screen) => screen.id.split(path.sep).pop())).includes(id)
+);
+apps.sort();
+---
+<Layout title={getScreenCategoryName(component!)}>
+  <header class="mb-20 flex items-center">
+    <div class="w-12 h-12 flex items-center justify-center bg-pastel-purple border-[3px] border-pastel-black mr-2">
+      <Fragment set:html={getScreenCategoryIcon(component, 'w-7 h-7 text-pstel-black')} />
+    </div>
+
+    <h1 class="font-heading text-3xl tracking-tighter underline underline-offset-4 decoration-4 decoration-pastel-purple">{getScreenCategoryName(component!)}</h1>
+  </header>
+
+  {apps.map((app) => (
+    <h2 class="font-semibold text-2xl mb-2 font-heading tracking-tighter">{app.data.title}</h2>
+
+    <div class="grid grid-cols-4 gap-5 mb-10">
+      {screens.filter(({ id }) => id.endsWith(`${path.sep}${app.id}`)).map((section) => (
+        section.data.map((screen: Screen) => (
+          <ScreenCard
+            title={screen.title}
+            image={screen.image.src}
+            platform={screen.platform} />
+        ))
+      ))}
+    </div>
+  ))}
+</Layout>
+
+<script>
+// @ts-ignore no types available
+import { LuminousGallery } from 'luminous-lightbox';
+import 'node_modules/luminous-lightbox/dist/luminous-basic.css';
+
+new LuminousGallery(document.querySelectorAll('.gallery-item'));
+</script>
