@@ -13,3 +13,7 @@
 - title: Cmd+k
   image: "~/assets/discord/navigation/cmdk.png"
   platform: Desktop
+
+- title: Apps filters
+  image: "~/assets/discord/navigation/apps-filters.png"
+  platform: Desktop

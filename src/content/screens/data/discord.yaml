@@ -1,0 +1,23 @@
+- title: Chat
+  image: "~/assets/discord/data/chat.png"
+  platform: Desktop
+
+- title: Users
+  image: "~/assets/discord/data/users.png"
+  platform: Desktop
+
+- title: Threads (list)
+  image: "~/assets/discord/data/threads-list.png"
+  platform: Desktop
+
+- title: Threads (grid)
+  image: "~/assets/discord/data/threads-grid.png"
+  platform: Desktop
+
+- title: Apps list
+  image: "~/assets/discord/data/apps-list.png"
+  platform: Desktop
+
+- title: Suggested apps
+  image: "~/assets/discord/data/suggested-apps.png"
+  platform: Desktop

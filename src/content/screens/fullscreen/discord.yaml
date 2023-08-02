@@ -1,0 +1,27 @@
+- title: Apps directory
+  image: "~/assets/discord/fullscreen/apps-directory.png"
+  platform: Desktop
+
+- title: Apps list
+  image: "~/assets/discord/fullscreen/apps-list.png"
+  platform: Desktop
+
+- title: View App
+  image: "~/assets/discord/fullscreen/app-view.png"
+  platform: Desktop
+
+- title: Threads
+  image: "~/assets/discord/fullscreen/threads.png"
+  platform: Desktop
+
+- title: Voice channel ("Focus" view)
+  image: "~/assets/discord/fullscreen/voice-channel-focus.png"
+  platform: Desktop
+
+- title: Voice channel ("Grid" view)
+  image: "~/assets/discord/fullscreen/voice-channel-grid.png"
+  platform: Desktop
+
+- title: Voice channel with side chat
+  image: "~/assets/discord/fullscreen/voice-channel-side-chat.png"
+  platform: Desktop

@@ -49,3 +49,11 @@
 - title: Pinned messages (empty)
   image: "~/assets/discord/popover/pinned-messages-empty.png"
   platform: Desktop
+
+- title: Threads sorting
+  image: "~/assets/discord/popover/threads-sorting.png"
+  platform: Desktop
+
+- title: Threads tags filter
+  image: "~/assets/discord/popover/threads-tags-filter.png"
+  platform: Desktop

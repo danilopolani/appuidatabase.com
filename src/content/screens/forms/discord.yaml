@@ -21,3 +21,15 @@
 - title: Button disabled with tooltip
   image: "~/assets/discord/forms/button-disabled-tooltip.png"
   platform: Desktop
+
+- title: Search thread
+  image: "~/assets/discord/forms/search-thread.png"
+  platform: Desktop
+
+- title: New thread
+  image: "~/assets/discord/forms/new-thread.png"
+  platform: Desktop
+
+- title: Search app
+  image: "~/assets/discord/forms/search-app.png"
+  platform: Desktop
