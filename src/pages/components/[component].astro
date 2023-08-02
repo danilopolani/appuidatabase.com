@@ -35,7 +35,7 @@ apps.sort();
   {apps.map((app) => (
     <h2 class="font-semibold text-2xl mb-2 font-heading tracking-tighter">{app.data.title}</h2>
 
-    <div class="grid grid-cols-4 gap-5 mb-10">
+    <div class="grid grid-cols-4 gap-5 mb-14">
       {screens.filter(({ id }) => id.endsWith(`${path.sep}${app.id}`)).map((section) => (
         section.data.map((screen: Screen) => (
           <ScreenCard

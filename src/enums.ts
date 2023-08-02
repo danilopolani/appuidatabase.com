@@ -1,10 +1,14 @@
 export enum AppCategory {
   Messaging = 'Messaging',
+  DevUtility = 'Dev Utility',
 }
 
 export enum ScreenCategory {
+  ContextMenu = 'contextmenu',
+  Data = 'data',
+  Dialogs = 'dialogs',
   Forms = 'forms',
-  Modals = 'modals',
+  Fullscreen = 'fullscreen',
   Notifications = 'notifications',
   Navigation = 'navigation',
   Popover = 'popover',

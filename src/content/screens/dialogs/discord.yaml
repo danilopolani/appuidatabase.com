@@ -1,9 +1,9 @@
 - title: Create server
-  image: "~/assets/discord/modals/create-server.png"
+  image: "~/assets/discord/dialogs/create-server.png"
   platform: Desktop
 
 - title: Join server
-  image: "~/assets/discord/modals/join-server.png"
+  image: "~/assets/discord/dialogs/join-server.png"
   platform: Desktop
 
 - title: Cmd+k
@@ -11,17 +11,17 @@
   platform: Desktop
 
 - title: User profile - Tab "Mutual servers"
-  image: "~/assets/discord/modals/user-profile-tab-mutual-servers.png"
+  image: "~/assets/discord/dialogs/user-profile-tab-mutual-servers.png"
   platform: Desktop
 
 - title: User profile - Tab "Mutual friends" (empty)
-  image: "~/assets/discord/modals/user-profile-tab-mutual-friends-empty.png"
+  image: "~/assets/discord/dialogs/user-profile-tab-mutual-friends-empty.png"
   platform: Desktop
 
 - title: Get nitro
-  image: "~/assets/discord/modals/get-nitro.png"
+  image: "~/assets/discord/dialogs/get-nitro.png"
   platform: Desktop
 
 - title: Friend request failed
-  image: "~/assets/discord/modals/friend-request-failed.png"
+  image: "~/assets/discord/dialogs/friend-request-failed.png"
   platform: Desktop

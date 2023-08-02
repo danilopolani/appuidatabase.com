@@ -1,0 +1,19 @@
+- title: Error "Cannot reformat"
+  image: "~/assets/heidisql/dialogs/cannot-reformat-error.png"
+  platform: Windows
+
+- title: Confirm "Drop database"
+  image: "~/assets/heidisql/dialogs/drop-database-confirm.png"
+  platform: Windows
+
+- title: Confirm "Save query"
+  image: "~/assets/heidisql/dialogs/save-query-confirm.png"
+  platform: Windows
+
+- title: User manager
+  image: "~/assets/heidisql/dialogs/user-manager.png"
+  platform: Windows
+
+- title: Edit field's text editor
+  image: "~/assets/heidisql/dialogs/field-text-editor.png"
+  platform: Windows

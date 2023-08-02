@@ -13,3 +13,11 @@
 - title: Mentions tab filters
   image: "~/assets/discord/notifications/tab-mentions-filters.png"
   platform: Desktop
+
+- title: Server notifications counter
+  image: "~/assets/discord/notifications/server-notifications-counter.png"
+  platform: Desktop
+
+- title: Channel's unread messages
+  image: "~/assets/discord/notifications/channel-unread-messages.png"
+  platform: Desktop

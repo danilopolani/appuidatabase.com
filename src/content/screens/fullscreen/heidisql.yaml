@@ -1,0 +1,15 @@
+- title: Initial window
+  image: "~/assets/heidisql/fullscreen/initial-window.png"
+  platform: Windows
+
+- title: Table's columns
+  image: "~/assets/heidisql/fullscreen/table-columns.png"
+  platform: Windows
+
+- title: Table's rows data
+  image: "~/assets/heidisql/fullscreen/table-data.png"
+  platform: Windows
+
+- title: Table's query
+  image: "~/assets/heidisql/fullscreen/table-query.png"
+  platform: Windows

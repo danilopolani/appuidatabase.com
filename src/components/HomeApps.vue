@@ -3,9 +3,9 @@
     type="text"
     v-model="searchInput"
     placeholder="Search an app"
-    class="border-2 border-pastel-black w-1/3 focus:border-pastel-red focus:ring-0 mb-10" />
+    class="border-2 border-pastel-black w-1/3 focus:border-pastel-red focus:ring-0 focus:rounded-none outline-none mb-10 py-2 px-3" />
 
-  <section v-for="(apps, category) in data" :key="category">
+  <section v-for="(apps, category) in data" :key="category" class="mb-14">
     <h2 class="font-semibold text-2xl mb-2 font-heading tracking-tighter">{{ category }}</h2>
 
     <div class="grid grid-cols-4 gap-5">

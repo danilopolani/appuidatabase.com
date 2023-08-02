@@ -1,0 +1,27 @@
+- title: Connections list
+  image: "~/assets/heidisql/navigation/connections-list.png"
+  platform: Windows
+
+- title: Connections list expanded
+  image: "~/assets/heidisql/navigation/connections-list-expanded.png"
+  platform: Windows
+
+- title: Menu bar
+  image: "~/assets/heidisql/navigation/menu.png"
+  platform: Windows
+
+- title: Icons with dropdown
+  image: "~/assets/heidisql/navigation/icons-dropdown.png"
+  platform: Windows
+
+- title: Tabs
+  image: "~/assets/heidisql/navigation/tabs.png"
+  platform: Windows
+
+- title: Nested tabs
+  image: "~/assets/heidisql/navigation/nested-tabs.png"
+  platform: Windows
+
+- title: Closable tabs
+  image: "~/assets/heidisql/navigation/closable-tab.png"
+  platform: Windows

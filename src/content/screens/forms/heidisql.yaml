@@ -1,0 +1,55 @@
+- title: Select
+  image: "~/assets/heidisql/forms/select.png"
+  platform: Windows
+
+- title: Autocomplete select expanded
+  image: "~/assets/heidisql/forms/autocomplete-select-expanded.png"
+  platform: Windows
+
+- title: Searchbar
+  image: "~/assets/heidisql/forms/searchbar.png"
+  platform: Windows
+
+- title: Searchbar filled with a "cancel" button
+  image: "~/assets/heidisql/forms/searchbar-clean-action.png"
+  platform: Windows
+
+- title: Select color
+  image: "~/assets/heidisql/forms/select-color.png"
+  platform: Windows
+
+- title: Number input
+  image: "~/assets/heidisql/forms/number-input.png"
+  platform: Windows
+
+- title: File input
+  image: "~/assets/heidisql/forms/file-input.png"
+  platform: Windows
+
+- title: Textarea
+  image: "~/assets/heidisql/forms/textarea.png"
+  platform: Windows
+
+- title: Checkbox
+  image: "~/assets/heidisql/forms/checkbox.png"
+  platform: Windows
+
+- title: Buttons
+  image: "~/assets/heidisql/forms/buttons.png"
+  platform: Windows
+
+- title: Buttons with icon
+  image: "~/assets/heidisql/forms/buttons-with-icon.png"
+  platform: Windows
+
+- title: Dropdown button
+  image: "~/assets/heidisql/forms/dropdown-button.png"
+  platform: Windows
+
+- title: Edit table's column defaults inline
+  image: "~/assets/heidisql/data/table-columns-edit-popover.png"
+  platform: Windows
+
+- title: Edit table's column type inline with tooltip
+  image: "~/assets/heidisql/data/table-columns-edit-select-tooltip.png"
+  platform: Windows

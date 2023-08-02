@@ -1,0 +1,15 @@
+- title: Connection actions
+  image: "~/assets/heidisql/contextmenu/connection-open.png"
+  platform: Windows
+
+- title: Database actions
+  image: "~/assets/heidisql/contextmenu/database.png"
+  platform: Windows
+
+- title: Table actions
+  image: "~/assets/heidisql/contextmenu/table.png"
+  platform: Windows
+
+- title: Edit table column
+  image: "~/assets/heidisql/contextmenu/table-columns-edit.png"
+  platform: Windows

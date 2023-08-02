@@ -1,0 +1,39 @@
+- title: Checkable tree with filter
+  image: "~/assets/heidisql/data/checkable-tree.png"
+  platform: Windows
+
+- title: Statistics table with percentages
+  image: "~/assets/heidisql/data/command-statistics.png"
+  platform: Windows
+
+- title: Database list tree
+  image: "~/assets/heidisql/data/database-list-tree.png"
+  platform: Windows
+
+- title: Table's columns
+  image: "~/assets/heidisql/data/table-columns.png"
+  platform: Windows
+
+- title: Edit table's column defaults inline
+  image: "~/assets/heidisql/data/table-columns-edit-popover.png"
+  platform: Windows
+
+- title: Edit table's column type inline with tooltip
+  image: "~/assets/heidisql/data/table-columns-edit-select-tooltip.png"
+  platform: Windows
+
+- title: Table's rows
+  image: "~/assets/heidisql/data/table-data-list.png"
+  platform: Windows
+
+- title: Table's rows with inline edit
+  image: "~/assets/heidisql/data/table-data-list-edit-inline.png"
+  platform: Windows
+
+- title: Users list
+  image: "~/assets/heidisql/data/users-list.png"
+  platform: Windows
+
+- title: Table of variables
+  image: "~/assets/heidisql/data/variables.png"
+  platform: Windows

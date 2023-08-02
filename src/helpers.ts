@@ -27,16 +27,32 @@ export function getPlatformCategory(value: Platform) {
 
 export function getScreenCategoryIcon(value: ScreenCategory, classes?: string) {
   return {
+    [ScreenCategory.ContextMenu]: `
+      <svg class="${classes}" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path fill="currentColor" d="M8 26H4a2.002 2.002 0 0 1-2-2v-4h2v4h4zM2 12h2v4H2zm24-4h-2V4h-4V2h4a2.002 2.002 0 0 1 2 2zM12 2h4v2h-4zM4 8H2V4a2.002 2.002 0 0 1 2-2h4v2H4zm23 24a.997.997 0 0 1-.707-.293l-6.138-6.138l-3.323 4.986a1 1 0 0 1-1.79-.268l-6-20a1 1 0 0 1 1.245-1.245l20 6a1 1 0 0 1 .268 1.79l-4.986 3.323l6.138 6.138a1 1 0 0 1 0 1.414l-4 4A.997.997 0 0 1 27 32zm0-2.414L29.586 27l-7.155-7.155l5.246-3.498l-16.185-4.855l4.855 16.185l3.498-5.246z"/>
+      </svg>
+    `,
+    [ScreenCategory.Data]: `
+      <svg class="${classes}" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path fill="currentColor" d="M8 14h11v2H8Zm0 5h13v2H8Z"/>
+        <path fill="currentColor" d="M28 4H4a2 2 0 0 0-2 2v20a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 2v2H4V6ZM4 26V10h24v16Z"/>
+      </svg>
+    `,
+    [ScreenCategory.Dialogs]: `
+      <svg class="${classes}" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path fill="currentColor" d="M4 20v2h4.586L2 28.586L3.414 30L10 23.414V28h2v-8H4zm16 2h4v2h-4zm-4-4h4v2h-4zm4-4h4v2h-4zM8 14h4v2H8z"/>
+        <path fill="currentColor" d="M27 3H5a2.003 2.003 0 0 0-2 2v11h2v-5h22v16H16v2h11a2.003 2.003 0 0 0 2-2V5a2.003 2.003 0 0 0-2-2Zm0 6H5V5h22Z"/>
+      </svg>
+    `,
     [ScreenCategory.Forms]: `
       <svg class="${classes}" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
         <path fill="currentColor" d="M27 22.14V9.86A4 4 0 1 0 22.14 5H9.86A4 4 0 1 0 5 9.86v12.28A4 4 0 1 0 9.86 27h12.28A4 4 0 1 0 27 22.14ZM26 4a2 2 0 1 1-2 2a2 2 0 0 1 2-2ZM4 6a2 2 0 1 1 2 2a2 2 0 0 1-2-2Zm2 22a2 2 0 1 1 2-2a2 2 0 0 1-2 2Zm16.14-3H9.86A4 4 0 0 0 7 22.14V9.86A4 4 0 0 0 9.86 7h12.28A4 4 0 0 0 25 9.86v12.28A4 4 0 0 0 22.14 25ZM26 28a2 2 0 1 1 2-2a2 2 0 0 1-2 2Z"/>
         <path fill="currentColor" d="M21 11H11v2h4v9h2v-9h4v-2z"/>
       </svg>
     `,
-    [ScreenCategory.Modals]: `
+    [ScreenCategory.Fullscreen]: `
       <svg class="${classes}" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-        <path fill="currentColor" d="M4 20v2h4.586L2 28.586L3.414 30L10 23.414V28h2v-8H4zm16 2h4v2h-4zm-4-4h4v2h-4zm4-4h4v2h-4zM8 14h4v2H8z"/>
-        <path fill="currentColor" d="M27 3H5a2.003 2.003 0 0 0-2 2v11h2v-5h22v16H16v2h11a2.003 2.003 0 0 0 2-2V5a2.003 2.003 0 0 0-2-2Zm0 6H5V5h22Z"/>
+        <path fill="currentColor" d="M8 2H2v6h2V4h4V2zm16 0h6v6h-2V4h-4V2zM8 30H2v-6h2v4h4v2zm16 0h6v-6h-2v4h-4v2zm0-6H8a2.002 2.002 0 0 1-2-2V10a2.002 2.002 0 0 1 2-2h16a2.002 2.002 0 0 1 2 2v12a2.002 2.002 0 0 1-2 2zM8 10v12h16V10z"/>
       </svg>
     `,
     [ScreenCategory.Navigation]: `
