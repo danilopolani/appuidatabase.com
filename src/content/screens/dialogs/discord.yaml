@@ -25,3 +25,7 @@
 - title: Friend request failed
   image: "~/assets/discord/dialogs/friend-request-failed.png"
   platform: Desktop
+
+- title: Strem picture-in-picture
+  image: "~/assets/discord/dialogs/stream-picture-in-picture.png"
+  platform: Desktop
