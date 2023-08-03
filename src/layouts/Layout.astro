@@ -35,6 +35,10 @@ const { title } = Astro.props;
 				vertical-align: initial;
 				@apply border-4;
 			}
+
+			.link {
+				@apply hover:underline hover:decoration-wavy group-hover:underline group-hover:decoration-wavy decoration-pastel-yellow underline-offset-4 decoration-2;
+			}
 		</style>
 	</head>
 	<body class="text-pastel-black bg-slate-50 font-body">
@@ -44,9 +48,9 @@ const { title } = Astro.props;
 			<slot />
 		</div>
 
-		<footer class="py-4 px-4 bg-pastel-black text-white text-xs">
-			Screenshots' intellectual property belongs to their owner.
-			Made in public and Open Source on <a href="https://github.com/danilopolani/appuidatabase.com" target="_blank">GitHub</a> by <a href="https://twitter.com/theraloss" target="_blank">Danilo Polani</a>.
+		<footer class="py-4 px-4 bg-pastel-black text-white text-xs flex w-full justify-between">
+			<p>Screenshots' intellectual property belongs to their owner.</p>
+			<p>Free and Open Source on <a href="https://github.com/danilopolani/appuidatabase.com" target="_blank" class="hover:underline hover:decoration-wavy decoration-pastel-yellow underline-offset-2 text-pastel-purple">GitHub</a> by <a href="https://twitter.com/theraloss" target="_blank" class="hover:underline hover:decoration-wavy decoration-pastel-yellow underline-offset-2 text-pastel-purple">Danilo Polani</a>.</p>
 		</footer>
 	</body>
 </html>

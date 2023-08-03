@@ -12,10 +12,10 @@ interface Props {
 const { label, items } = Astro.props;
 const triggerElementId = `nav-dropdown-trigger-${label.toLocaleLowerCase().replace(/[^a-z0-9]/gi, '-')}`;
 ---
-<li class="group py-4">
+<li class="group py-5">
   <button
     id={triggerElementId}
-    class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-slate-800 font-semibold md:p-0 md:w-auto hover:underline hover:decoration-wavy group-hover:underline group-hover:decoration-wavy decoration-pastel-yellow underline-offset-4 decoration-2">
+    class="flex items-center justify-between w-full pl-3 pr-4 text-pastel-black font-semibold md:p-0 md:w-auto hover:underline hover:decoration-wavy group-hover:underline group-hover:decoration-wavy decoration-pastel-yellow underline-offset-4 decoration-2">
     {label}
 
     <svg class="w-2.5 h-2.5 ml-2.5 hidden md:block" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">

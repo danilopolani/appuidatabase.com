@@ -11,7 +11,7 @@ const { isHome } = Astro.props;
 ---
 <nav class="bg-pastel-purple border-pastel-black border-b-2 sticky top-0 z-10" x-data="{ mobileOpen: false }">
   <div class="container flex flex-wrap items-center justify-between mx-auto px-4">
-    <a href="/" class="py-4 text-xl md:text-2xl font-semibold text-pastel-black font-heading tracking-[-0.1rem]">
+    <a href="/" class="text-xl py-4 md:text-2xl font-semibold text-pastel-black font-heading tracking-[-0.1rem]">
       {isHome && (
         <h1>App UI Database</h1>
       )}
@@ -38,6 +38,12 @@ const { isHome } = Astro.props;
             label: getScreenCategoryName(category),
           }))
         } />
+
+        <li>
+          <a href="https://github.com/danilopolani/appuidatabase.com/blob/master/CONTRIBUTING.md" target="_blank" class="block w-full py-5 bg-pastel-yellow pl-3 pr-4 text-pastel-black font-semibold border-2 border-b-0 md:border-t-0 border-pastel-black">
+            Contribute
+          </a>
+        </li>
       </ul>
     </div>
   </div>
