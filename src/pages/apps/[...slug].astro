@@ -40,7 +40,9 @@ screenCategories.sort();
       <h1 class="font-heading text-3xl tracking-tighter">{entry.data.title}</h1>
       <div class="pl-1">
         <p class="text-slate-400">{entry.data.category}</p>
-        <p class="text-slate-600"><strong>Made with</strong>: {entry.data.technologies.join(', ')}</p>
+        {entry.data.technologies.length > 0 && (
+          <p class="text-slate-600"><strong>Made with</strong>: {entry.data.technologies.join(', ')}</p>
+        )}
 
         <a href={entry.data.url} target="_blank" class="block mt-4 text-pastel-purple hover:underline hover:decoration-wavy decoration-pastel-purple underline-offset-4">
           {entry.data.url}

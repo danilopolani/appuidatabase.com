@@ -1,0 +1,12 @@
+- title: Menu (drawer)
+  image: "~/assets/telegram/navigation/menu-drawer.png"
+  platform: Windows
+
+- title: Chats list
+  image: "~/assets/telegram/data/chats-list.png"
+  platform: Windows
+
+- title: Channel data
+  image: "~/assets/telegram/navigation/channel-data.png"
+  platform: Windows
+

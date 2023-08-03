@@ -1,0 +1,19 @@
+- title: Search input
+  image: "~/assets/telegram/forms/search.png"
+  platform: Windows
+
+- title: Send audio message
+  image: "~/assets/telegram/forms/send-audio.png"
+  platform: Windows
+
+- title: Create a channel
+  image: "~/assets/telegram/dialogs/create-channel.png"
+  platform: Windows
+
+- title: Create a group
+  image: "~/assets/telegram/dialogs/create-group.png"
+  platform: Windows
+
+- title: Create a folder
+  image: "~/assets/telegram/dialogs/create-folder.png"
+  platform: Windows

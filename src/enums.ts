@@ -12,6 +12,7 @@ export enum ScreenCategory {
   Notifications = 'notifications',
   Navigation = 'navigation',
   Popover = 'popover',
+  Settings = 'settings',
 }
 
 export enum Platform {

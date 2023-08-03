@@ -1,0 +1,11 @@
+- title: No chat selected
+  image: "~/assets/telegram/fullscreen/no-chat-selected.png"
+  platform: Windows
+
+- title: Channel
+  image: "~/assets/telegram/fullscreen/channel.png"
+  platform: Windows
+
+- title: Calendar
+  image: "~/assets/telegram/fullscreen/calendar.png"
+  platform: Windows

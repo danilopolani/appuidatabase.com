@@ -1,0 +1,15 @@
+- title: Settings
+  image: "~/assets/telegram/settings/settings.png"
+  platform: Windows
+
+- title: Settings - Profile
+  image: "~/assets/telegram/settings/settings-profile.png"
+  platform: Windows
+
+- title: Settings - Folders
+  image: "~/assets/telegram/settings/settings-folders.png"
+  platform: Windows
+
+- title: Channel settings as user (no privileges)
+  image: "~/assets/telegram/popover/channel-settings.png"
+  platform: Windows

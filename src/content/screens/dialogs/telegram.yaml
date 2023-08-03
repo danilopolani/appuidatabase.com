@@ -1,0 +1,59 @@
+- title: Create a folder
+  image: "~/assets/telegram/dialogs/create-folder.png"
+  platform: Windows
+
+- title: Create a group
+  image: "~/assets/telegram/dialogs/create-group.png"
+  platform: Windows
+
+- title: Create a channel
+  image: "~/assets/telegram/dialogs/create-channel.png"
+  platform: Windows
+
+- title: Confirm "Stop recording"
+  image: "~/assets/telegram/dialogs/stop-recording.png"
+  platform: Windows
+
+- title: Report channel
+  image: "~/assets/telegram/dialogs/report-channel.png"
+  platform: Windows
+
+- title: Share
+  image: "~/assets/telegram/dialogs/share.png"
+  platform: Windows
+
+- title: Channel info
+  image: "~/assets/telegram/dialogs/channel-info.png"
+  platform: Windows
+
+- title: Channel info (drawer)
+  image: "~/assets/telegram/dialogs/channel-info-drawer.png"
+  platform: Windows
+
+- title: Channel photos (drawer)
+  image: "~/assets/telegram/dialogs/channel-photos-drawer.png"
+  platform: Windows
+
+- title: Channel videos (drawer)
+  image: "~/assets/telegram/dialogs/channel-videos-drawer.png"
+  platform: Windows
+
+- title: Channel shared links (drawer)
+  image: "~/assets/telegram/dialogs/channel-shared-links-drawer.png"
+  platform: Windows
+
+- title: Channel audio files (drawer)
+  image: "~/assets/telegram/dialogs/channel-audio-files-drawer.png"
+  platform: Windows
+
+- title: Settings
+  image: "~/assets/telegram/settings/settings.png"
+  platform: Windows
+
+- title: Settings - Profile
+  image: "~/assets/telegram/settings/settings-profile.png"
+  platform: Windows
+
+- title: Settings - Folders
+  image: "~/assets/telegram/settings/settings-folders.png"
+  platform: Windows

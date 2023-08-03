@@ -1,0 +1,7 @@
+- title: Search results
+  image: "~/assets/telegram/data/search-results.png"
+  platform: Windows
+
+- title: Chats list
+  image: "~/assets/telegram/data/chats-list.png"
+  platform: Windows
