@@ -3,7 +3,7 @@
 		<img
 			:src="(typeof image === 'string' ? image : image.src)"
 			:alt="title + ' thumbnail'"
-			class="object-cover border-b-2 border-pastel-black"
+			class="object-cover border-b-2 border-pastel-black aspect-video"
 		/>
 
 		<div class="p-3 group-hover:underline underline-offset-2 decoration-2 decoration-pastel-purple">
