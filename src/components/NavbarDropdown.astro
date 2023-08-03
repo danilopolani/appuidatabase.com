@@ -18,17 +18,17 @@ const triggerElementId = `nav-dropdown-trigger-${label.toLocaleLowerCase().repla
     class="flex items-center justify-between w-full py-2 pl-3 pr-4 text-slate-800 font-semibold md:p-0 md:w-auto hover:underline hover:decoration-wavy group-hover:underline group-hover:decoration-wavy decoration-pastel-yellow underline-offset-4 decoration-2">
     {label}
 
-    <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <svg class="w-2.5 h-2.5 ml-2.5 hidden md:block" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
     </svg>
   </button>
 
   <!-- Dropdown menu -->
-  <div class="z-10 absolute md:-ml-10 lg:-ml-6 hidden group-hover:block font-normal bg-pastel-purple divide-y divide-pastel-black border-2 border-pastel-black w-44 md:mt-3">
-    <ul class="py-2 text-sm text-purple-black" aria-labelledby={triggerElementId}>
+  <div class="z-10 md:absolute md:-ml-10 lg:-ml-6 md:hidden group-hover:block font-normal md:bg-pastel-purple divide-y divide-pastel-black md:border-2 border-pastel-black md:w-44 md:mt-3">
+    <ul class="py-2 text-sm text-purple-black pl-6 md:pl-0" aria-labelledby={triggerElementId}>
       {items.map((item) => (
         <li>
-          <a href={item.url} class="block px-4 py-2 hover:bg-pastel-yellow">{item.label}</a>
+          <a href={item.url} class="block px-4 py-3 md:py-2 md:hover:bg-pastel-yellow">{item.label}</a>
         </li>
       ))}
     </ul>
