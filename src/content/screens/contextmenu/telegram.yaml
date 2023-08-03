@@ -1,15 +1,15 @@
 - title: Channel's actions
   image: "~/assets/telegram/contextmenu/channel.png"
-  platform: Desktop
+  platform: Windows
 
 - title: Message's actions as user (no privileges)
   image: "~/assets/telegram/contextmenu/message-as-user.png"
-  platform: Desktop
+  platform: Windows
 
 - title: Message's actions as admin
   image: "~/assets/telegram/contextmenu/message-as-admin.png"
-  platform: Desktop
+  platform: Windows
 
 - title: Own message's actions
   image: "~/assets/telegram/contextmenu/own-message.png"
-  platform: Desktop
+  platform: Windows

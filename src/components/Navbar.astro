@@ -42,13 +42,3 @@ const { isHome } = Astro.props;
     </div>
   </div>
 </nav>
-
-<script>
-document.querySelectorAll('#navbar-dropdown > ul > li').forEach((item) => {
-  (item as HTMLElement).addEventListener('mouseenter', () => {
-    if ((item as HTMLElement).querySelector('& > div')?.classList.contains('hidden')) {
-      ((item as HTMLElement).querySelector('& > button')! as HTMLElement).click();
-    }
-  });
-});
-</script>

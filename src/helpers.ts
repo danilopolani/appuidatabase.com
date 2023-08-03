@@ -1,7 +1,7 @@
 import type { CollectionEntry } from 'astro:content';
 // @ts-ignore
 import path from 'node:path';
-import { Platform, ScreenCategory } from './enums';
+import { ScreenCategory } from './enums';
 
 export function fetchAppsScreensCount(apps: CollectionEntry<'apps'>[], screens: CollectionEntry<'screens'>[]) {
   return apps.map((app) => ({
@@ -13,16 +13,15 @@ export function fetchAppsScreensCount(apps: CollectionEntry<'apps'>[], screens: 
   }));
 }
 
-export function getScreenCategoryName(value: string) {
-  return value.replace(/[^a-z0-9]/gi, ' ').replace(/(^\w{1})|(\s+\w{1})/g, (letter) => letter.toUpperCase());
-}
+export function getScreenCategoryName(value: ScreenCategory) {
+  const manualMapping = {
+    [ScreenCategory.ContextMenu]: 'Context Menu',
+    [ScreenCategory.Forms]: 'Forms & Inputs',
+    [ScreenCategory.Popover]: 'Actions & Popover',
+  };
 
-export function getPlatformCategory(value: Platform) {
-  if ([Platform.Desktop, Platform.Mobile].includes(value)) {
-    return value;
-  }
-
-  return [Platform.Mac, Platform.Windows, Platform.Linux].includes(value) ? Platform.Desktop : Platform.Mobile;
+  // @ts-ignore
+  return manualMapping[value] || value.replace(/[^a-z0-9]/gi, ' ').replace(/(^\w{1})|(\s+\w{1})/g, (letter) => letter.toUpperCase());
 }
 
 export function getScreenCategoryIcon(value: ScreenCategory, classes?: string) {

@@ -1,19 +1,19 @@
 - title: Channel settings
   image: "~/assets/telegram/popover/channel-settings.png"
-  platform: Desktop
+  platform: Windows
 
 - title: Choose group image
   image: "~/assets/telegram/popover/choose-group-image.png"
-  platform: Desktop
+  platform: Windows
 
 - title: Emoji picker
   image: "~/assets/telegram/popover/emoji-picker.png"
-  platform: Desktop
+  platform: Windows
 
 - title: Sticker picker
   image: "~/assets/telegram/popover/sticker-picker.png"
-  platform: Desktop
+  platform: Windows
 
 - title: Video chat options
   image: "~/assets/telegram/popover/video-chat-options.png"
-  platform: Desktop
+  platform: Windows

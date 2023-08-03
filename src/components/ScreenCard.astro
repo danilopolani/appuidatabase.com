@@ -1,5 +1,5 @@
 ---
-import type { Platform } from 'src/enums';
+import { Platform } from 'src/enums';
 interface Props {
 	title: string;
 	image: ImageMetadata;
@@ -13,12 +13,19 @@ const imageWithBg = (image: ImageMetadata) => {
 
 	return ratio > 2;
 }
+
+const tagColor = {
+	[Platform.Windows]: 'bg-pastel-blue',
+	[Platform.Mac]: 'bg-pastel-gray',
+	[Platform.Linux]: 'bg-pastel-red',
+	[Platform.Desktop]: 'bg-pastel-green',
+}[platform];
 ---
 <a
 	href={typeof image === 'string' ? image : image.src}
 	class="block group bg-white border-2 border-pastel-black relative after:w-[calc(100%+6px)] after:h-[calc(100%+6px)] after:absolute after:-bottom-4 after:-right-4 after:-z-10 after:bg-pastel-green mr-4 mb-4 cursor-pointer gallery-item">
 	<div class="absolute right-2 top-2 z-[1]">
-		<div class="px-2 py-1 bg-pastel-green text-xs font-semibold rounded-xl">{platform}</div>
+		<div class={'px-2 py-1 text-xs font-semibold border-1 border-pastel-black ' + tagColor}>{platform}</div>
 	</div>
 
   <div class="h-[300px] overflow-hidden relative bg-pastel-black">
